@@ -1,0 +1,10 @@
+sqlalchemy[asyncio] == 2.0.44
+aiogram == 3.22.0
+dotenv == 0.9.9
+asyncpg == 0.30.0
+psycopg2-binary == 2.9.11
+greenlet == 3.2.4
+APScheduler == 3.11.1
+psycopg == 3.2.12
+SQLAlchemy == 2.0.44
+twilio == 9.8.8
