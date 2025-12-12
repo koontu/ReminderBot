@@ -35,7 +35,7 @@ async def send_reminder(rem_id: int):
             except:
                 pass
             return
-        msg = f"🔔 <b>{reminder.title}</b>\n\n{reminder.text}"
+        msg = f"🔔 {reminder.title}\n\n{reminder.text}"
         try:
             if reminder.delivery_method == "telegram":
                 await bot.send_message(reminder.user_id, msg)

@@ -101,7 +101,7 @@ async def select_reminder(callback: CallbackQuery):
     if not reminder or reminder.user_id != callback.from_user.id:
         await callback.answer("Напоминание не найдено", show_alert=True)
         return
-    info = (f"📌 <b>{reminder.title}</b>\n\n"
+    info = (f"📌 {reminder.title}\n\n"
             f"{reminder.text}\n\n"
             f"🔄 Тип: {reminder.recurrence_type}\n"
             f"⏰ Время: {reminder.time_to_send}\n"
